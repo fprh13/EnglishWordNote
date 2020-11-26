@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <div class="container">
+            <h1>{{ EnglishWord.word }}</h1>
+            <br/><h2>{{ EnglishWord.mean }}</h2>
+            <br/><br/><br/><br/><br/><br/><br/>
+            <a href="{% url 'home' %}">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfkjwsye_uxqasq_qJq4D_1PG4Iadt4OFgWA&usqp=CAU alt=""></a></p>
+        <br/><br/><br/><br/><br/><br/><br/><a href="{% url 'delete' EnglishWord.id %}">삭제하기</a>
+        </div>
+</body>
+</html>

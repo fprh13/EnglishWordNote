@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<div class="container">
+	<form action="{% url 'add' %}">
+	  <h4>단어: </h4>
+	  <input type="mean" name="word">
+	  <br>
+	  <br>
+	  <h4>뜻: </h4>
+	  <textarea cols=22 rows=2 name="mean"></textarea>
+	  <br>
+	  <br>
+	  <input class="btn btn-dark" type="submit" value="단어저장">
+		<br><br><a href="{% url 'home' %}">돌아가기</a></p>
+  </form>
+</body>
+</html>

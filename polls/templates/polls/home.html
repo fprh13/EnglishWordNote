@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<body>
+    <h1>My English Word Note.</h1>
+
+
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'create' %}">단어추가</a>
+    </li>
+
+    <div class="container">
+        <br/><a href="{% url 'home' %}">@영단어섞기@</a></p>
+        </div>
+
+    {% for EnglishWord in EnglishWords.all %}
+        <div class="container">
+            <p>{{ EnglishWord.summary }}
+                <a href="{% url 'detail' EnglishWord.id %}">___?___</a></p>
+        </div>
+    {% endfor %}
+
+
+</body>
+</html>
